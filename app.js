@@ -45,13 +45,14 @@ app.get('/weather', (req,res)=>{
            
 
           
-            getWeather(latitude,longitude,(summary,temp)=>{
+            getWeather(latitude,longitude,(summary,temp,wind)=>{
                 console.log(summary + " &  the tempreture is: "+temp+"-Dig.");
                
                         res.send({
                     location:Address,
                     summary:summary,
-                    temp:temp
+                    temp:temp,
+                    wind,
                 })
                 
             })

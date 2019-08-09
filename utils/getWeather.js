@@ -4,8 +4,9 @@ const getWeather= function (latitude,longitude,callback){
 request({url:weatherUrl,json:true},(error,Response)=>{
 const summary=Response.body.currently.summary;
 const temp=Response.body.currently.temperature;
+const wind = Response.body.currently.windSpeed;
 
-callback(summary,temp);
+callback(summary,temp,wind);
 
 });
 }

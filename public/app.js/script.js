@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 result.innerHTML=`<h5 style="color:red">${data.error}</h5>`;
             }
             else{
-                result.innerHTML=`<p>${data.location}</p><p>${data.summary}</p><p>${data.temp}</p>`;
+                result.innerHTML=`<p>${data.location}.</p><p>${data.summary}.</p><p>${data.temp}-Digree.</p><p> Wind speed is - ${data.wind}</p>`;
                 console.log(data.location,data.summary,data.temp)
                 search.value=""
             }
