@@ -1,0 +1,57 @@
+body{
+    width: 100%;
+  margin: 0%;
+  padding: 0%;
+
+    background: url(./wallpapersden.com_forest-mountains-sunset-cool-weather-minimalism_2560x1080.jpg),center/cover fixed no-repeat;
+    align-items: center;
+    justify-content: center
+
+}
+section{
+height: auto;
+    width: 300px;
+    border: 1px solid white;
+    margin:0 auto;
+    text-align: center;
+    background-color:transparent;
+    color: aliceblue;
+    margin-top: 30px;
+}
+.nav{
+    background: white;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+    padding: 2px;
+    /* border-radius: 20px; */
+}
+
+h1{
+    color:white;
+}
+.fot{
+   position: sticky;
+   bottom: 0px;
+   display: block;
+   margin-bottom: 5px;
+
+}
+.result p{
+color: greenyellow;
+}
+input [type="text"]{
+    outline:none;
+}
+input[type="text"], textarea {
+
+    background-color :transparent;
+    outline:none;
+    border-bottom: 2px solid greenyellow;
+  
+  }
