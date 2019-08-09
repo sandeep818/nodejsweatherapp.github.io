@@ -4,7 +4,7 @@ const app =express();
 const hbs = require('hbs');
 const giocode = require('./utils/jiocode');
 const getWeather = require('./utils/getWeather.js');
-
+const port =process.env.PORT || 3000;
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname,'./public');
 const viewsPath = path.join(__dirname,'./templates/views');
@@ -75,6 +75,6 @@ res.render('404',{
 })
 
 
-app.listen(3000,()=>{
-    console.log('server runing 3000')
+app.listen(port,()=>{
+    console.log('server runing '+port)
 })
